@@ -1,10 +1,13 @@
 #include "hsh_main.h"
+/**
+ * _instructions - instructions for the command
+ */
 
-void _instructions()
- {
-     printf("----------------------------------------\n");
-     printf("CTRL + C => Quitter\n");
-     printf("CTRL + D => Fermer le terminal\n");
-     printf("Taper exit => Quitter\n");
-     printf("----------------------------------------\n\n");
- }
+void _instructions(void)
+{
+	printf("----------------------------------------\n");
+	printf("CTRL + C => to Quit\n");
+	printf("CTRL + D => close the terminal\n");
+	printf("Taper exit => to Quit\n");
+	printf("----------------------------------------\n\n");
+}
