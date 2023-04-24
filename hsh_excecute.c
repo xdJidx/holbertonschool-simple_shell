@@ -1,5 +1,11 @@
 #include "hsh_main.h"
 
+/**
+ * _executeCommand - permet d'excuter la commande
+ * @command: la chaine de character
+ *
+ */
+
 void _executeCommand(char* command)
 {
      char* args[100];
