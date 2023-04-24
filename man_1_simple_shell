@@ -1,0 +1,49 @@
+.TH man_3_printf
+.SH NAME
+_printf \- Print string
+.SH SYNOPSIS
+.B #include <stdio.>
+.br
+.B #include <stdlib.h>
+.br
+.B #include <string.h>
+.br
+.B #include <unistd.h>
+.br
+.B #include <sys/stat.h>
+.br
+.B #include <sys/wait.h>
+.br
+.B #include <fcnt1.h>
+
+.B void _instructions(void);
+.br
+.B char *_readCommand(void);
+.br
+.B void _executeCommand(char *
+.I command
+.B );
+.br
+DESCRIPTION
+This program is a simplified imitation of the Shell.
+.br
+He can execute the command you type on the line starting with $.
+
+ARGUMENTS
+If you have another arguments on the command ligne after analysis of the command, the first argument is the name of the command file and the others arguments are another parameters.
+
+INVOCATION
+Use ./hsh to disapered the command lign.
+
+.SH BUGS
+Not bug found rate now.
+
+.SH EXEMPLES
+Need more test to found an exemple.
+
+.SH COLOPHON
+This page was written as part of the holberton school training for learning purposes. Any resemblance to another page is purely intentional.
+
+.SH Authors
+.ce
+Jérôme BERNARD & Samira Douiou
