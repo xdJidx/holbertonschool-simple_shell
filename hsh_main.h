@@ -11,8 +11,8 @@
 
 #define MAX_COMMAND_SIZE 100
 
-void _instructions();
-char* _readCommand();
-void _executeCommand(char* command);
+void _instructions(void);
+char *_readCommand(void);
+void _executeCommand(char *command);
 
 #endif
