@@ -21,7 +21,7 @@ void _executeCommand(char *command)
 	args[index] = NULL; /* Use to execve() */
 
 	path = getenv("PATH");
-	path_copy = strdup(path); /* Use for strtok() */
+	path_copy = _strdup(path); /* Use for strtok() */
 	dir = strtok(path_copy, ":");
 
 	while (dir != NULL)

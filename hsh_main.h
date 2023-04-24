@@ -14,5 +14,6 @@
 void _instructions(void);
 char *_readCommand(void);
 void _executeCommand(char *command);
+char *_strdup(char *str);
 
 #endif
