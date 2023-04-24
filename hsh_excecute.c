@@ -33,6 +33,6 @@ void _executeCommand(char *command)
 		dir = strtok(NULL, ":");
 	}
 
-	printf("Commande inconnue.\n");
+	printf("hsh: %s: command not found.\n", command);
 	free(path_copy);
 }
