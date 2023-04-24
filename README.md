@@ -85,19 +85,19 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
    `closed`
 	This function closes a directory stream, which is a pointer to an object that represents a directory and its contents.
 
-   `execv`
+   [`execv`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/hsh_excecute.c)
 	This function replaces the current process image with a new process image specified by the path argument. The new process image must be an executable file.
 
-   `Prompt`
+   [`Prompt`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/hsh_prompt.c)
 	This function typically displays a command prompt to the user to prompt them to enter a command.
 
-   `Get line`
+   [`Get line`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/hsh_read_command.c) 
 	This function reads a line of input from the user and returns it as a string.
 
 ## AUTHORS
 
 ```
-samira D
-Jerome B
+[samira D
+Jerome B] (https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/AUTHORS
 ```
 
