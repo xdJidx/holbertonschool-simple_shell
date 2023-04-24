@@ -10,7 +10,7 @@ void _executeCommand(char *command)
 {
 	char *args[100];
 	int index = 0;
-	char *path, path_copy, dir;
+	char *path, *path_copy, *dir;
 
 	args[index] = strtok(command, " ");
 	while (args[index] != NULL)
