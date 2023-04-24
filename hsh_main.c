@@ -10,6 +10,7 @@ int main(void)
 {
 	char *command = NULL;
 	int status;
+	pid_t pid;
 
 	_instructions();
 
@@ -28,7 +29,7 @@ int main(void)
 			exit(EXIT_SUCCESS);
 		}
 
-		pid_t pid = fork();
+		pid = fork();
 
 		if (pid == -1)
 		{
