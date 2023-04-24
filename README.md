@@ -34,6 +34,17 @@ c. Use the command for to compile the programm
 ## 3. Usage
 
 To run the Simple Shell, use the command `./hsh` in the directory where the program was compiled. The shell will then start running, and you can enter commands to be executed.
+- to use our simple shell use the command 
+   `./hsh`
+
+- you will get this command line 
+ `$             `
+
+- Type the command you want to use 
+`$ ls   `
+
+- you will then get the same output as the classic shell 
+`AUTHORS  hsh_excecute.c  hsh_main.c  hsh_main.h  hsh_prompt.c  hsh_read_command.c  man_1_simple_shell  README.md  _strdup.c `
 
 ## 4. Features
 - exemple systeme call allowed
@@ -82,3 +93,11 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
 
    `Get line`
 	This function reads a line of input from the user and returns it as a string.
+
+## AUTHORS
+
+```
+samira D
+Jerome B
+```
+
