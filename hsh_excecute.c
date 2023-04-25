@@ -2,7 +2,7 @@
 
 /**
  * _executeCommand - Execut the command of user
- * @command: string of user
+ * @command: string of user use
  *
  */
 
