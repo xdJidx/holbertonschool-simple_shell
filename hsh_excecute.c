@@ -8,9 +8,11 @@
 
 void _executeCommand(char *command)
 {
+	char *path = getenv("PATH");
+	char *dir = strtok(path, ":");
+	char *executable = malloc(strlen(dir) + strlen(command) + 2);
 	char *args[100];
 	int index = 0;
-	char *path, *path_copy, *dir;
 
 	args[index] = strtok(command, " ");
 	while (args[index] != NULL)
@@ -20,19 +22,22 @@ void _executeCommand(char *command)
 	}
 	args[index] = NULL; /* Use to execve() */
 
-	path = getenv("PATH");
-	path_copy = _strdup(path); /* Use for strtok() */
-
-	dir = strtok(path_copy, ":");
-
 	while (dir != NULL)
 	{
-		char command_path[MAX_COMMAND_SIZE];
+		sprintf(executable, "%s/%s", dir, command);
+		if (access(executable, X_OK) == 0)
+		{
+			execve(executable, args, NULL);
 
-		execve(command_path, args, NULL);
+			if (execve(executable, args, NULL) == -1)
+			{
+				perror("Error executing command");
+				exit(EXIT_FAILURE);
+			}
+		}
 		dir = strtok(NULL, ":");
 	}
-
-	printf("hsh: %s: command not found.\n", command);
-	free(path_copy);
+	free(executable);
+	fprintf(stderr, "Command not found: %s\n", command);
+	exit(EXIT_FAILURE);
 }
