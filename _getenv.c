@@ -6,11 +6,13 @@
  * Return: The value of the environmental variable or NULL if the variable is
  * not found.
  */
-char *_getenv(const char *name)
+char *_getenv(char *name)
 {
 	int i;
-	char **env;
-	char *path;
+	char **environ = NULL;
+	char *path; 
+
+
 /*Loop through each environment variable*/
 	for (i = 0; environ[i]; i++)
 	{

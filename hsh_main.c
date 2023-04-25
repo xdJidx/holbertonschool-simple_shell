@@ -3,7 +3,6 @@
 /**
  * main - Loops for simple shell
  * Return: 0 if sucess
- *
  */
 
 int main(void)
@@ -13,7 +12,6 @@ int main(void)
 	pid_t pid;
 
 	_instructions();
-
 	while (1)
 	{
 		command = _readCommand();
@@ -23,14 +21,11 @@ int main(void)
 			printf("\n");
 			exit(EXIT_SUCCESS);
 		}
-
 		if (strcmp(command, "exit") == 0)
 		{
 			exit(EXIT_SUCCESS);
 		}
-
 		pid = fork();
-
 		if (pid == -1)
 		{
 			perror("Erreur lors de la création d'un nouveau processus");
