@@ -22,16 +22,17 @@ void _executeCommand(char *command)
 
 	path = getenv("PATH");
 	path_copy = _strdup(path); /* Use for strtok() */
+
 	dir = strtok(path_copy, ":");
 
 	while (dir != NULL)
-	{
-		char command_path[MAX_COMMAND_SIZE];
+        {
+                char command_path[MAX_COMMAND_SIZE];
 
-		snprintf(command_path, MAX_COMMAND_SIZE, "%s/%s", dir, args[0]);
-		execve(command_path, args, NULL);
-		dir = strtok(NULL, ":");
-	}
+                execve(command_path, args, NULL);
+                dir = strtok(NULL, ":");
+        }
+
 
 	printf("hsh: %s: command not found.\n", command);
 	free(path_copy);
