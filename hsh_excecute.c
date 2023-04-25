@@ -26,13 +26,12 @@ void _executeCommand(char *command)
 	dir = strtok(path_copy, ":");
 
 	while (dir != NULL)
-        {
-                char command_path[MAX_COMMAND_SIZE];
+	{
+		char command_path[MAX_COMMAND_SIZE];
 
-                execve(command_path, args, NULL);
-                dir = strtok(NULL, ":");
-        }
-
+		execve(command_path, args, NULL);
+		dir = strtok(NULL, ":");
+	}
 
 	printf("hsh: %s: command not found.\n", command);
 	free(path_copy);

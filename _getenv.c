@@ -12,7 +12,7 @@ char *_getenv(char *name)
 	char **environ;
 	char *path;
 
-	environ = malloc(sizeof(char*));
+	environ = malloc(sizeof(char *));
 /*Loop through each environment variable*/
 	for (i = 0; environ[i]; i++)
 	{
