@@ -10,7 +10,7 @@ char *_getenv(const char *name)
 {
 	int i;
 	char **environ = NULL;
-	char *path; 
+	char *path;
 
 
 /*Loop through each environment variable*/
