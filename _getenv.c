@@ -6,7 +6,7 @@
  * Return: The value of the environmental variable or NULL if the variable is
  * not found.
  */
-char *_getenv(char *name)
+char *_getenv(const char *name)
 {
 	int i;
 	char **environ = NULL;
@@ -25,4 +25,5 @@ char *_getenv(char *name)
 		}
 	}
 	return (NULL);
+
 }
