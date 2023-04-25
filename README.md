@@ -13,7 +13,7 @@ This project is an integral part of the **HolbertonSchool** training curriculum,
 5. Authors
 
 
-## 1. Description
+## [Danger](#){.btn .btn-}1. Description
 
 The Simple Shell project is an implementation of the Unix shell. It allows reading commands entered by the user and executing them by creating child processes.
 
@@ -23,6 +23,8 @@ The Simple Shell project is an implementation of the Unix shell. It allows readi
 To compile the Simple Shell project, follow **these steps:**
 
 a. Clone the repository from GitHub onto your local machine.
+
+`git clone`
 
 b. Navigate to the directory containing the project files.
 
@@ -47,11 +49,11 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
 `AUTHORS  hsh_excecute.c  hsh_main.c  hsh_main.h  hsh_prompt.c  hsh_read_command.c  man_1_simple_shell  README.md  _strdup.c `
 
 ## 4. Features
-- exemple systeme call allowed
+- [center]exemple systeme call allowed[center]
 
 ![fork-exec-exit-wait-2](https://user-images.githubusercontent.com/122387449/234001269-64adb8d6-91cf-4fe7-91ae-bc8c1f0c776f.png)
 
-  `Fork`
+  [`Fork`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/hsh_main.c)
     A parent process uses fork to **create a new child process.**
     **The child process**  is a copy of the parent.
     After fork, both parent and child executes the same program but in separate processes.
@@ -71,7 +73,7 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
 
 
 
-  - exemple functions allowed
+  - [center]exemple functions allowed[center]
 
    `access`
 	This function checks whether the calling process can access a file or directory. It takes two arguments: a filename and a mode indicating the type of access to check for (read, write, or execute).
@@ -96,8 +98,5 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
 
 ## AUTHORS
 
-```
-[samira D
-Jerome B] (https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/AUTHORS
-```
+[`samira D and Jerome B`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/AUTHORS)
 
