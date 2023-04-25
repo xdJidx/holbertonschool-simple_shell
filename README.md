@@ -13,6 +13,7 @@ This project is an integral part of the **HolbertonSchool** training curriculum,
 5. Authors
 
 
+
 ## 1. Description
 
 The Simple Shell project is an implementation of the Unix shell. It allows reading commands entered by the user and executing them by creating child processes.
@@ -20,6 +21,7 @@ The Simple Shell project is an implementation of the Unix shell. It allows readi
 
 
 ## 2. Compilation
+
 To compile the Simple Shell project, follow **these steps:**
 
 a. Clone the repository from GitHub onto your local machine.
@@ -96,8 +98,6 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
 
 ## AUTHORS
 
-```
-[samira D
-Jerome B] (https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/AUTHORS
-```
+[`samira D and Jerome B`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/AUTHORS)
+
 
