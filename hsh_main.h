@@ -19,4 +19,6 @@ int _strlen(char *str);
 int _strcmp(char *s1, char *s2);
 char *_getenv(char *name);
 char *_strchr(const char *str, int c);
+
+
 #endif
