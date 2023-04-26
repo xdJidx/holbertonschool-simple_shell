@@ -3,7 +3,16 @@
 
 # # :mortar_board: C Project Simple Shell
 
-This project is an integral part of the **HolbertonSchool** training curriculum, which aims to create a minimalist shell in the **C language.**
+This project is an integral part of the **HolbertonSchool** training curriculum, which aims to create a minimalist shell in the **C language.**. 
+The project involves several stages, starting with the development of a basic shell that **can execute commands and handle input and output.**
+
+The project also includes **implementing built-in shell commands, such as cd, exit, and env.** 
+The shell program should be able to handle signals, redirection, and pipes.  
+
+The Simple Shell project is designed to teach students **how to work with system calls, file manipulation, and process management in the C programming language.**
+The project also teaches students how to work in a team environment and collaborate effectively using version control tools such as Git.  
+
+The project is evaluated based on **its functionality, coding style, and documentation.** The project must also follow specific coding standards, including the use of the Betty style guide, which is a set of guidelines for writing clean, readable, and maintainable code.  
 
 # Table of Contents 📋
 
@@ -26,7 +35,7 @@ The features of a simple shell typically include user input of commands, parsing
 
 Simple shells are used for a variety of tasks such as task automation, server management, system administration, script development, software compilation, etc.  
 
-finaly, the Simple Shell project is an implementation of the Unix shell. It allows **reading commands entered** by the user and ***executing them by creating child processes.**
+finaly, the Simple Shell project is an implementation of the Unix shell. It allows **reading commands entered** by the user and **executing them by creating child processes.**
 
 
 
@@ -57,11 +66,19 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
 - Type the command you want to use 
 `$ ls   `
 
-- you will then get the same output as the classic shell 
-`AUTHORS  hsh_excecute.c  hsh_main.c  hsh_main.h  hsh_prompt.c  hsh_read_command.c  man_1_simple_shell  README.md  _strdup.c `
+- you will then get the same output as the classic shell  
+
+``` 
+AUTHORS    hsh  hsh_main.h 
+hsh_read_command.c  README.md  
+_strcmp.c  _strlen.c
+_getenv.c  hsh_main.c  hsh_prompt.c  
+man_1_simple_shell  _strchr.c  _strdup.c
+
+```
 
 ## 4. Features
-- [center]exemple systeme call allowed[center]
+<h3 align="center">- exemple systeme call allowed</h3>
 
 ![fork-exec-exit-wait-2](https://user-images.githubusercontent.com/122387449/234001269-64adb8d6-91cf-4fe7-91ae-bc8c1f0c776f.png)
 
@@ -79,13 +96,13 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
       it's used to wait for a child process to terminate. If there are no child processes, the calling process returns immediately with an error.
       If there are child processes, the calling process blocks until one of its child processes terminates.
 
-  `Exit`
+  [`Exit`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/hsh_main.c)
       he's terminates the calling process.
       Any child processes of the calling process are orphaned and become children of the init process.
 
 
 
-  - [center]exemple functions allowed[center]
+  <h3 align="center">- Exemples functions allowed</h3>
 
    `access`
 	This function checks whether the calling process can access a file or directory. It takes two arguments: a filename and a mode indicating the type of access to check for (read, write, or execute).
@@ -109,7 +126,7 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
 	This function reads a line of input from the user and returns it as a string.
 
 
-# 5.Enviroment
+# 5.Environment
 
 <!-- ubuntu -->
 <a href="https://ubuntu.com/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=Ubuntu&color=E95420&logo=Ubuntu&logoColor=E95420&labelColor=2F333A" alt="Suite CRM"></a> OS: Ubuntu 20.04 LTS
