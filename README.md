@@ -5,27 +5,32 @@
 
 This project is an integral part of the **HolbertonSchool** training curriculum, which aims to create a minimalist shell in the **C language.**
 
-# Table of Contents
+# Table of Contents 📋
 
 1. Description
 2. Compilation
 3. Usage
 4. Features
-5. Authors
+5. Environnement
+6. Authors
 
 
-<<<<<<< HEAD
-## [Danger](#){.btn .btn-}1. Description
-=======
+## 1. Description 📖
+A simple shell is a computer program that provides a ***command-line interface for executing commands or applications on an operating system.*** The most common shells are those provided with operating systems such as Bash, Zsh, Fish, etc.
 
-## 1. Description
->>>>>>> e068200557a010a16255688933b9941f6aa12219
+A shell can be used to interact with the operating system using plain text commands rather than clicking on icons or navigating through menus. Users can use the commands to perform various tasks such as navigating directories, creating files, deleting files, managing processes, etc. 
 
-The Simple Shell project is an implementation of the Unix shell. It allows reading commands entered by the user and executing them by creating child processes.
+A simple shell can be developed using programming languages such as C or Python. The shell's features can be implemented using system calls, standard library functions, and third-party libraries.  
+
+The features of a simple shell typically include user input of commands, parsing of the command, creating processes to execute the command, signal and error handling, regular expression interpretation, input and output redirection, management of environment variables, support for built-in commands, formatting and displaying the results of commands, etc.  
+
+Simple shells are used for a variety of tasks such as task automation, server management, system administration, script development, software compilation, etc.  
+
+finaly, the Simple Shell project is an implementation of the Unix shell. It allows **reading commands entered** by the user and ***executing them by creating child processes.**
 
 
 
-## 2. Compilation
+## 2. Compilation 🔧
 
 To compile the Simple Shell project, follow **these steps:**
 
@@ -40,7 +45,7 @@ c. Use the command for to compile the programm
 `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
 
 
-## 3. Usage
+## 3. Usage 💻
 
 To run the Simple Shell, use the command `./hsh` in the directory where the program was compiled. The shell will then start running, and you can enter commands to be executed.
 - to use our simple shell use the command 
@@ -103,11 +108,29 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
    [`Get line`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/hsh_read_command.c) 
 	This function reads a line of input from the user and returns it as a string.
 
-## AUTHORS :black_nib:
+
+# 5.Enviroment
+
+<!-- ubuntu -->
+<a href="https://ubuntu.com/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=Ubuntu&color=E95420&logo=Ubuntu&logoColor=E95420&labelColor=2F333A" alt="Suite CRM"></a> OS: Ubuntu 20.04 LTS
+<!-- bash -->
+<a href="https://www.gnu.org/software/bash/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=GNU%20Bash&color=4EAA25&logo=GNU%20Bash&logoColor=4EAA25&labelColor=2F333A" alt="terminal"></a>
+<!-- c -->	
+<a href="https://www.cprogramming.com/" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=C%20Language&color=5C6BC0&logo=c&logoColor=A8B9CC&labelColor=2F333A" alt="C Low level programming language"></a> Language: C
+Compiler: gcc 9.3.0
+<!-- vim -->
+<a href="https://www.vim.org/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=Vim&color=019733&logo=Vim&logoColor=019733&labelColor=2F333A" alt="Suite CRM"></a> Editor: VIM 8.1.2269
+<!-- git -->
+<a href="https://git-scm.com/" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=Git&color=F05032&logo=Git&logoColor=F05032&labelColor=2F333A" alt="git distributed version control system"></a> Control version: Git
+<!-- github -->
+<a href="https://github.com" target="_blank"> <img height="" src="https://img.shields.io/static/v1?label=&message=GitHub&color=181717&logo=GitHub&logoColor=f2f2f2&labelColor=2F333A" alt="Github"></a>
+
+Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
+
+
+
+## 6. AUTHORS :black_nib:
 
 [`samira D and Jerome B`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/AUTHORS)
-<<<<<<< HEAD
-=======
 
->>>>>>> e068200557a010a16255688933b9941f6aa12219
 
