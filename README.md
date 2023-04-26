@@ -1,6 +1,7 @@
+![Holberton School logo](https://user-images.githubusercontent.com/120781178/229278297-98c6e4b7-f15f-4788-a893-15cb97f10351.png)
 
 
-# Project Simple Shell
+# # :mortar_board: C Project Simple Shell
 
 This project is an integral part of the **HolbertonSchool** training curriculum, which aims to create a minimalist shell in the **C language.**
 
@@ -96,7 +97,7 @@ To run the Simple Shell, use the command `./hsh` in the directory where the prog
    [`Get line`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/hsh_read_command.c) 
 	This function reads a line of input from the user and returns it as a string.
 
-## AUTHORS
+## AUTHORS :black_nib:
 
 [`samira D and Jerome B`](https://github.com/xdJidx/holbertonschool-simple_shell/blob/main/AUTHORS)
 
