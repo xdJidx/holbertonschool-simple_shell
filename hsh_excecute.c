@@ -8,7 +8,7 @@
 
 void _executeCommand(char *command)
 {
-	char *path = getenv("PATH");
+	char *path = _getenv("PATH");
 	char *dir = strtok(path, ":");
 	char *executable = malloc(strlen(dir) + strlen(command) + 2);
 	char *args[100];
