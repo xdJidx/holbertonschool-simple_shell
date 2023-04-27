@@ -126,6 +126,7 @@ man_1_simple_shell  _strchr.c  _strdup.c
 	This function reads a line of input from the user and returns it as a string.
 
 
+
 # 5.Environment
 
 <!-- ubuntu -->
