@@ -24,26 +24,51 @@ _printf \- Print string
 .I command
 .B );
 .br
-DESCRIPTION
+.B char *_strdup(char *
+.I str
+.B );
+.br
+.B int _strlen(char *
+.I str
+.B );
+.br
+.B int _strcmp(char *
+.I s1
+.B , char *
+.I s2
+.B );
+.br
+.B char *_getenv(char *
+.I name
+.B );
+.br
+.B char *_strchr(const char *
+.I str
+.B , int 
+.I c
+.B );
+.br
+
+.SH DESCRIPTION
 This program is a simplified imitation of the Shell.
 .br
 He can execute the command you type on the line starting with $.
 
-ARGUMENTS
+.SH ARGUMENTS
 If you have another arguments on the command ligne after analysis of the command, the first argument is the name of the command file and the others arguments are another parameters.
 
 INVOCATION
 Use ./hsh to disapered the command lign.
 
 .SH BUGS
-Not bug found rate now.
+The Path is not found in our code. Only the output "this command is not found" appears
 
 .SH EXEMPLES
-Need more test to found an exemple.
+If you type the "ls" command in our shell, you will get "This command is not found"
 
 .SH COLOPHON
 This page was written as part of the holberton school training for learning purposes. Any resemblance to another page is purely intentional.
 
 .SH Authors
 .ce
-Jérôme BERNARD & Samira Douiou
+Jérôme BERNARD & Samira DOUIOU
