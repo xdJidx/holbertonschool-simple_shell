@@ -61,10 +61,10 @@ INVOCATION
 Use ./hsh to disapered the command lign.
 
 .SH BUGS
-The Path is not found in our code. Only the output "this command is not found" appears
+The Path is not found in our code. Only the output "this command is not found" appears.
 
 .SH EXEMPLES
-If you type the "ls" command in our shell, you will get "This command is not found"
+If you type the "ls" command in our shell, you will get "This command is not found".
 
 .SH COLOPHON
 This page was written as part of the holberton school training for learning purposes. Any resemblance to another page is purely intentional.
