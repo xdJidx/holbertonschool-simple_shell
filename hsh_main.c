@@ -22,11 +22,10 @@ int main(void)
 			exit(EXIT_SUCCESS);
 		}
 		if (_strcmp(command, "exit") == 0) /* Quit the shell */
-    		{
-        		free(command);
-        		exit(EXIT_SUCCESS);
-    		}
-		
+		{
+			free(command);
+			exit(EXIT_SUCCESS);
+		}
 		pid = fork();/* Create child process to execute command */
 		if (pid == -1)
 		{
