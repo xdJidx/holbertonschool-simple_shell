@@ -24,11 +24,11 @@ e*/
                 free(command);
                 exit(1);
         }
-        token = strtok(command, " ");
+        tokenCommand = strtok(command, " ");
 
         while (tokenCommand != NULL)
         {
-                argv[index] = token;/* stocke le token dans le tableau argv */
+                argv[index] = tokenCommand;/* stocke le token dans le tableau argv */
                 index++;
                 tokenCommand = strtok(NULL, " ");/* passe au token suivant */
         }
