@@ -21,10 +21,12 @@ int main(void)
 			printf("\n");
 			exit(EXIT_SUCCESS);
 		}
-		if (strcmp(command, "exit") == 0)
-		{
-			exit(EXIT_SUCCESS);
-		}
+		if (_strcmp(command, "exit") == 0) /* Quit the shell */
+    		{
+        		free(command);
+        		exit(EXIT_SUCCESS);
+    		}
+		
 		pid = fork();/* Create child process to execute command */
 		if (pid == -1)
 		{
