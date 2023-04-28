@@ -13,6 +13,13 @@
 
 #define MAX_COMMAND_SIZE 100
 
+typedef struct builtin
+{
+    char *name;
+    void (*func)(char **argv);
+} builtin_t;
+
+
 extern char **environ;
 void _instructions(void);
 char *_readCommand(void);
@@ -26,5 +33,10 @@ char **tokenEnv(char *path);
 char **tokenCommand(char *command);
 char *findPath(char *command);
 char *_strcat(char *dest, char *src);
+void _exitShell(char **argv);
+void _printHelp(char **argv);
+void _changeDirectory(char **argv);
+extern builtin_t builtins[];
+
 
 #endif
