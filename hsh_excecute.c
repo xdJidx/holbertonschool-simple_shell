@@ -8,7 +8,7 @@
 void _executeCommand(char **argv)
 {
 	char *command = argv[0];
-i	/* If the command is not in the path, look for it */
+	/* If the command is not in the path, look for it */
 	if (command[0] == '/' || command[0] == '.')
 	{
 		command = argv[0];
