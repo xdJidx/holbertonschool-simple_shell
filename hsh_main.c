@@ -15,9 +15,8 @@ int main(void)
 	_instructions();
 	while (1)
 	{
-		command = _readCommand();
-
-		if (command == NULL)
+		command = _readCommand();/* Read command from user input */
+		if (command == NULL)/* If command is NULL, exit program */
 		{
 			printf("\n");
 			exit(EXIT_SUCCESS);
@@ -26,21 +25,21 @@ int main(void)
 		{
 			exit(EXIT_SUCCESS);
 		}
-		pid = fork();
+		pid = fork();/* Create child process to execute command */
 		if (pid == -1)
 		{
 			perror("Erreur lors de la création d'un nouveau processus");
 		}
 		else if (pid == 0)
 		{
+			/* Code executed on child process: execute command */
 			argv = tokenCommand(command);
-			/* Code executed on child process */
 			_executeCommand(argv);
 			exit(EXIT_SUCCESS);
 		}
 		else
 		{
-			/* Code executed on parent process */
+			/* Code executed on parent process: wait for child to complete */
 			waitpid(pid, &status, 0);
 		}
 		free(command);
