@@ -6,38 +6,28 @@
  *
  */
 
-void _executeCommand(char *command)
+void _executeCommand(char **argv)
 {
-	char *path = _getenv("PATH");
-	char *dir = strtok(path, ":");
-	char *executable = malloc(strlen(dir) + strlen(command) + 2);
-	char *args[100];
-	int index = 0;
+	char *command = argv[0];
+	int status;
 
-	args[index] = strtok(command, " ");
-	while (args[index] != NULL)
+	if (command[0] == '/' || command[0] == '.')
 	{
-		index++;
-		args[index] = strtok(NULL, " ");
+		command = argv[0];	
 	}
-	args[index] = NULL; /* Use to execve() */
+	else
+		command = find_path(args[0]);
 
-	while (dir != NULL)
-	{
-		sprintf(executable, "%s/%s", dir, command);
-		if (access(executable, X_OK) == 0)
+	if (command == NULL)
 		{
-			execve(executable, args, NULL);
-
-			if (execve(executable, args, NULL) == -1)
-			{
-				perror("Error executing command");
-				exit(EXIT_FAILURE);
-			}
+			free(command);
+			perror("Error: no command");
+			return (0);
 		}
-		dir = strtok(NULL, ":");
-	}
-	free(executable);
-	fprintf(stderr, "Command not found: %s\n", command);
-	exit(EXIT_FAILURE);
+
+	if (execve(command, args, environ) == -1)
+		{
+			perror("Error: execve");
+			return (0);
+		}
 }
