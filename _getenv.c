@@ -1,30 +1,26 @@
 #include "hsh_main.h"
 
 /**
- * _getenv - Function that gets the value of the environmental variable.
- * @name: Name of the environmental variable.
- * Return: The value of the environmental variable or NULL if the variable is
- * not found.
+ * _getenv - function that gets the path
+ * @command: command entered by the user
+ *
+ * Return: NULL.
  */
-char *_getenv(char *name)
+
+char _getenv(char *command)
 {
-	int i;
-	char **environ;
-	char *path;
+        int index, size;
 
-	environ = malloc(sizeof(char *));
-/*Loop through each environment variable*/
-	for (i = 0; environ[i]; i++)
-	{
-		/*Loop through each environment variable*/
-		if (_strcmp(environ[i], name) == 0)
-		{
-			/*Extract the path by skipping the name and '='*/
-			path = environ[i] + _strlen(name) + 1;
-			return (path);
-		}
-	}
-	free(environ);
-	return (NULL);
-
+        size = strlen(command);/* calculer la taille de la commande */
+        /* parcourir la liste d'environnement jusqu'à sa fin */
+        for (index = 0; environ[index]; index++)
+        {
+                /* comparer les premiers caractères de la commande avec chaque var d'env */
+                if (strncmp(environ[index], command, size) == 0)
+                /*Retourne la val de la var d'env à partir de la position après le nom de la var */
+                return (environ[index] + size + 1);
+        }
+        /* Retourne NULL si la variable d'environnement n'a pas été trouvée */
+        return (NULL);
 }
+
