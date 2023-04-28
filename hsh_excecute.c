@@ -9,25 +9,22 @@
 void _executeCommand(char **argv)
 {
 	char *command = argv[0];
-	int status;
 
 	if (command[0] == '/' || command[0] == '.')
 	{
 		command = argv[0];	
 	}
 	else
-		command = find_path(args[0]);
+		command = findPath(argv[0]);
 
 	if (command == NULL)
 		{
 			free(command);
-			perror("Error: no command");
-			return (0);
+			perror("Error: no command found");
 		}
 
-	if (execve(command, args, environ) == -1)
+	if (execve(command, argv, environ) == -1)
 		{
 			perror("Error: execve");
-			return (0);
 		}
 }
