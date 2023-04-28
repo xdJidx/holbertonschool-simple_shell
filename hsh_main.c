@@ -10,6 +10,7 @@ int main(void)
 	char *command = NULL;
 	int status;
 	pid_t pid;
+	char **argv;
 
 	_instructions();
 	while (1)
@@ -32,8 +33,9 @@ int main(void)
 		}
 		else if (pid == 0)
 		{
+			argv = tokenCommand(command);
 			/* Code executed on child process */
-			_executeCommand(command);
+			_executeCommand(argv);
 			exit(EXIT_SUCCESS);
 		}
 		else
