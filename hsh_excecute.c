@@ -12,7 +12,7 @@ void _executeCommand(char **argv)
 	int isBuiltIn = 0;
 
 	while (builtins[i].name != NULL)
-    	{
+	{
 		if (strcmp(command, builtins[i].name) == 0)
 		{
 			builtins[i].func(argv);
@@ -23,7 +23,7 @@ void _executeCommand(char **argv)
 	}
 	/*If the command is not built-in, look for it in the path and execute it*/
 	if (!isBuiltIn)
-    	{
+	{
 		/* If the command is not in the path, look for it */
 		if (command[0] == '/' || command[0] == '.')
 		{
