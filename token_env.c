@@ -1,7 +1,7 @@
 #include "hsh_main.h"
 
 /**
- * token_env - function that tokenizes the path
+ * tokenEnv - function that tokenizes the path
  * @path: path to be tokenize
  *
  * Return: Path in token argv
@@ -16,21 +16,21 @@ char **tokenEnv(char *path)
 
 	argv = malloc(path_size * sizeof(char *));
 
-		if (argv == NULL)
+		if (argv == NULL)/* Check if memory allocation failed*/
 		{
 			perror("Error : allocation memory");
 			return (0);
 		}
 
-		token = strtok(path, ":");
+		token = strtok(path, ":");/*Tokenize the path using ":" as a delimiter*/
 
 		while (token != NULL)
 		{
-			argv[index] = token;
+			argv[index] = token;/*Add the directory to the argv array*/
 			index++;
-			token = strtok(NULL, ":");
+			token = strtok(NULL, ":");/*Get the next token*/
 		}
-		argv[index] = NULL;
+		argv[index] = NULL;/*Get the next token*/
 
 	return (argv);
 }
